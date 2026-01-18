@@ -35,3 +35,37 @@ pydantic==2.9.1
 - langchain, langchain-ibm, langchain-community for using relevant features from Langchain.
 - chromadb for using the chroma database as a vector database.
 - pypdf is required for loading PDF documents.
+
+
+## Setup Instructions
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/AI-rag-assistant-using-LangChain.git
+cd AI-rag-assistant-using-LangChain
+```
+
+2. Create and activate virtual environment:
+```bash
+python -m venv my_env
+source my_env/Scripts/activate  # Windows
+# source my_env/bin/activate    # Mac/Linux
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+4. Create `.env` file and add your OpenAI API key:
+```bash
+cp .env.example .env
+# Edit .env and add your actual API key
+```
+
+5. Run the application:
+```bash
+python qabot.py
+```
+
+6. Open your browser to http://127.0.0.1:7860
